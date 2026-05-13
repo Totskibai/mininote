@@ -8,6 +8,7 @@ export default function Index() {
     try {
       initDatabase();
     } catch (error) {
+      console.error("Database initialization failed:", error);
       Alert.alert("Database Error", "Failed to initialize database");
     }
   }, []);
